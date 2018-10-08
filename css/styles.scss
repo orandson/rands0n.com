@@ -1,0 +1,35 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$default-color: #4E854B;
+
+@import 'base', 'post';
+
+body {
+    background: url(/images/texture-white.png) repeat;
+    font-family: Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 20px;
+
+    .container {
+        max-width: 650px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 1.4em;
+    font-size: 14px;
+}
+
+.post-title {
+    display: block;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+@import 'syntax-highlight';

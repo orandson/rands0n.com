@@ -1,0 +1,17 @@
+<div class="archive">
+  <h4 class="recent-articles">Recent and not-so recent blog posts</h4>
+
+  {% for post in site.posts %}
+    {% assign currentdate = post.date | date: "%Y" %}
+      {% if currentdate != date %}
+        <h4 class="currentyear">{{ currentdate }}</h4>
+      {% assign date = currentdate %}
+    {% endif %}
+
+    {% if post.language != 'pt' %}
+      <span class="post-title">
+        [{{ post.date | date: "%b %d, %Y" }}] <a href="{{ post.url }}"> {{ post.title }}</a>
+      </span>
+    {% endif %}
+  {% endfor %}
+</div>

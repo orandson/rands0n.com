@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="post post-page">
+  <div class="post-content">
+    <div class="post-meta">
+      <time class="post-meta-date" datetime="{{ page.date }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      &mdash;
+      <span class="read-time" title="Estimate read time">
+        {% assign words = content | number_of_words %}
+        {% if words < 360 %}1 min read{% else %}{{ words | divided_by:180 }} min read{% endif %}
+      </span>
+    </div>
+    <!-- /post-meta -->
+
+    {{ content }}
+  </div>
+  <!-- /post-content -->
+</div>
+<!-- /post post-page -->
+
+<h3>About {{ site.name }}</h3>
+
+<div>
+  <img src="/images/rands0n.jpg" style="width: 150px; float: left; margin: 0 1.4em 1.4em 0;" alt="">
+
+  <p>Hey! I'm a developer who is interested in Computer Science and the craft of programming. When I'm not at work. I love to ride a bike, try new recipes and listening to new songs.</p>
+  <p>I'd love to hear your questions and comments on this article! <a href="https://twitter.com/rands0n">Mention me on twitter</a>, <a href="mailto:orandson@gmail.com">shoot me an email</a>.
+  </p>
+</div>
