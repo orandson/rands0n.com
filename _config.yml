@@ -3,6 +3,9 @@ email: 'orandson@gmail.com'
 description: ''
 sub_name: ''
 
+# configurations
+timezone: America/Curitiba
+
 baseurl: '/'
 name: 'rands0n.com'
 url: 'http://rands0n.com'
