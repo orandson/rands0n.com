@@ -1,0 +1,10 @@
+.zine {
+  background-color: #1a1b1c;
+  height: 2.5rem;
+  -webkit-clip-path: polygon(0 0,100% 0,0 60%,0 0);
+  clip-path: polygon(0 0,100% 0,0 60%,0 0);
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
