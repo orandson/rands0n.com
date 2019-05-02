@@ -17,11 +17,11 @@ body {
   .container {
     max-width: 650px;
 
-    > .post-title {
-      margin: 0 0 10px 0;
+    .post-title {
+      margin-bottom: 15px;
 
-      a {
-        border-bottom: none;
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }

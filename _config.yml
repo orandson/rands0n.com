@@ -6,7 +6,8 @@ sub_name: ''
 # configurations
 timezone: America/Curitiba
 
-baseurl: '/'
+base_uri: '/'
+base_url: 'http://rands0n.com'
 name: 'rands0n.com'
 url: 'http://rands0n.com'
 
